@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baccouche.moez.jobfinder">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.baccouche.moez.jobfinder.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Profile.ProfileActivity" />
+        <activity android:name=".Register.RegisterBirthdateActivity" />
+        <activity android:name=".Register.RegisterProfileDetailsActivity" />
+        <activity android:name=".Register.RegisterProfilePersonalDetailsActivity" />
+        <activity android:name=".Ads.AdActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".Register.RegisterActivity" />
+        <activity android:name=".Profile.ProfileDetailsActivity" />
+        <activity android:name=".Profile.PersonalDetailsActivity" />
+        <activity
+            android:name=".Ads.PlusAdActivityPart1"
+            android:label="Ajouter une annonce" />
+        <activity
+            android:name=".Ads.AdDetails"
+            android:label="Détails" />
+        <activity android:name=".Profile.ProfileOwner" />
+        <activity android:name=".Profile.ProfileOwnerDetails" />
+        <activity android:name=".Profile.ProfileOwnerPersonal" />
+        <activity
+            android:name=".Ads.PlusAdActivityPart2"
+            android:label="Informations sur l'annonce" />
+        <activity android:name=".Ads.TabOwnerAdsActivity" />
+        <activity android:name=".Ads.ApplyActivity" />
+        <activity android:name=".Ads.ApplicationsActivity" />
+        <activity android:name=".Ads.ApplicationResponse" />
+        <activity android:name=".Ads.MyApplicationsActivity" />
+        <activity
+            android:name=".Profile.EditProfileActivity"
+            android:label="Modifier vos informations" />
+        <activity
+            android:name=".Ads.EditAdActivity"
+            android:label="Modifier vos informations" />
+
+
+    </application>
+
+</manifest>

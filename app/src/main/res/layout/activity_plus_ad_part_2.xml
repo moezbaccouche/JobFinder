@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Difficulté"
+        android:textSize="18sp"/>
+
+    <Spinner
+        android:id="@+id/spDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:entries="@array/optionsDifficulty"
+        android:prompt="@string/difficultiesPrompt" />
+
+    <EditText
+        android:id="@+id/etSalary"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroup"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:hint="Salaire"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etSalary"
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:id="@+id/buttonDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText4"
+            android:layout_below="@+id/editText4"
+            android:text="Par jour"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:id="@+id/buttonHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Par heure"
+            android:textSize="18sp"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Adresse"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:inputType="textPersonName"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btNext"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/next100" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Précisez les informations de l'annonce"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etSalary"
+        android:layout_alignBottom="@+id/etSalary"
+        android:layout_toStartOf="@+id/btNext"
+        android:text="Dt"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>

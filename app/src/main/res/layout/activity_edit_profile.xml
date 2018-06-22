@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:id="@+id/btReturn"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/textView38"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/returnblue" />
+
+        <TextView
+            android:id="@+id/tvOffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btReturn"
+            android:layout_alignBottom="@+id/btReturn"
+            android:layout_toEndOf="@+id/btReturn"
+            android:text="Modification"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imUser"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/btReturn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/textView32"
+            android:layout_below="@+id/imUser"
+            android:layout_marginTop="23dp"
+            android:text="Nom"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/textView31"
+            android:layout_alignParentEnd="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Nom" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/etBirthDate"
+            android:layout_alignBottom="@+id/etBirthDate"
+            android:layout_alignParentStart="true"
+            android:text="Date de naissance"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etBirthDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/etFirstName"
+            android:layout_marginTop="9dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Date de naissance" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/etAddress"
+            android:layout_alignBottom="@+id/etAddress"
+            android:layout_alignEnd="@+id/textView31"
+            android:text="Adresse"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/etBirthDate"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Adresse" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/etPhoneNumber"
+            android:layout_alignBottom="@+id/etPhoneNumber"
+            android:layout_alignEnd="@+id/textView31"
+            android:text="Numéro"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etAddress"
+            android:layout_below="@+id/etAddress"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:text="Numéro" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView35"
+            android:layout_below="@+id/etPhoneNumber"
+            android:layout_marginTop="40dp"
+            android:text="Email"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView36"
+            android:layout_alignBottom="@+id/textView36"
+            android:layout_alignParentEnd="true"
+
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Email" />
+
+        <Button
+            android:id="@+id/btSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="7dp"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/save"
+            android:text="Enregistrer "
+            android:textColor="@color/bgConnectBt" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView36"
+            android:layout_below="@+id/etEmail"
+            android:layout_marginTop="40dp"
+            android:text="Diplôme"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etDegree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView37"
+            android:layout_alignBottom="@+id/textView37"
+            android:layout_alignParentEnd="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Diplôme" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView35"
+            android:layout_below="@+id/etDegree"
+            android:layout_marginTop="40dp"
+            android:text="Emploi actuel"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etCurrentJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView38"
+            android:layout_alignBottom="@+id/textView38"
+            android:layout_alignParentEnd="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Emploi actuel" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView38"
+            android:layout_below="@+id/etCurrentJob"
+            android:layout_marginTop="40dp"
+            android:text="Etat civil"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView39"
+            android:layout_alignBottom="@+id/textView39"
+            android:layout_alignParentEnd="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Etat civil" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView38"
+            android:layout_below="@+id/etStatus"
+            android:layout_marginTop="40dp"
+            android:text="Mot de passe"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView40"
+            android:layout_alignBottom="@+id/textView39"
+            android:layout_alignParentEnd="true"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="Mot de passe" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/etFirstName"
+            android:layout_alignBottom="@+id/etFirstName"
+            android:layout_alignEnd="@+id/textView38"
+            android:text="Prénom"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etLastName"
+            android:layout_below="@+id/etLastName"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Prénom" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

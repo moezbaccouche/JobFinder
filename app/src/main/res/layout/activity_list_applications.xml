@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="Demandes Reçues"
+        android:textColor="@color/bgConnectBt"
+        android:textSize="17sp"/>
+
+    <ListView
+        android:id="@+id/listApps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView9"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:divider="@color/grey"
+        android:dividerHeight="8dp" />
+
+
+
+
+</RelativeLayout>

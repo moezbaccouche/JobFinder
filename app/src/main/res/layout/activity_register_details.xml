@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saisissez vos coordonnées"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+
+
+        <EditText
+            android:id="@+id/etMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:layout_margin="20dp"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Numéro de téléphone"
+            android:layout_margin="20dp"
+            android:inputType="phone"
+            />
+
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ville"
+            android:layout_margin="20dp"
+            android:inputType="textPostalAddress"
+            />
+
+        <EditText
+            android:id="@+id/etStreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_margin="20dp"
+            android:hint="Rue" />
+
+        <Button
+            android:id="@+id/btNext"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/next100" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

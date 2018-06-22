@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Titre de l'annonce"
+        android:textColor="@color/bgConnectBt"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imAd"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="22dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imAd"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="13dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Adresse" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView24"
+        android:layout_below="@+id/textView24"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Ici sera affichée l'adresse" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvAddress"
+        android:layout_below="@+id/tvAddress"
+        android:layout_marginTop="22dp"
+        android:text="Salaire"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView28"
+        android:layout_below="@+id/textView28"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Ici sera affiché le salaire" />
+
+    <TextView
+        android:id="@+id/tvDateApplication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvSalary"
+        android:layout_below="@+id/tvSalary"
+        android:layout_marginTop="22dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="Demande envoyée le " />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDateApplication"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="Status" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView33"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="En attente, acceptée ou refusée" />
+
+
+</RelativeLayout>

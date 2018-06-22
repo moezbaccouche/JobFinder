@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutRel">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Titre de l'annonce"
+        android:textColor="@color/bgConnectBt"
+        android:focusable="false"
+        android:textSize="17sp"/>
+
+    <ImageView
+        android:id="@+id/imApplicant"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginEnd="7dp"
+        android:layout_marginTop="16dp"
+        android:layout_toStartOf="@+id/tvTitle"
+        android:focusable="false"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvApplicantFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imApplicant"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/imApplicant"
+        android:text="Nom et prénom"
+        android:focusable="false"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imApplicant"
+        android:layout_below="@+id/imApplicant"
+        android:layout_marginTop="21dp"
+        android:text="Commentaire"
+        android:focusable="false"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvComment"
+        android:layout_below="@+id/tvComment"
+        android:layout_marginTop="16dp"
+        android:focusable="false"
+        android:text="Ici sera affiché le commentaire" />
+
+
+
+    <TextView
+        android:id="@+id/tvIdUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imApplicant"
+        android:focusable="false"
+        android:layout_toEndOf="@+id/imApplicant"/>
+
+    <TextView
+        android:id="@+id/tvIdAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvApplicantFullName"
+        android:layout_marginTop="7dp"
+        android:focusable="false"
+        android:layout_toEndOf="@+id/tvComment"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:ignore="NewApi"></Toolbar>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btReturn"
+        android:layout_marginStart="29dp"
+        android:layout_toEndOf="@+id/btReturn"
+        android:text="John Doe"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btReturn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/returnblue" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/btReturn"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@+id/button3"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/user" />
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button2"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/menu25" />
+
+</RelativeLayout>

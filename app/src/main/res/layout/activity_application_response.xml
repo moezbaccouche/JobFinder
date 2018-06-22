@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        tools:ignore="NewApi">
+     </Toolbar>
+
+
+    <Button
+        android:id="@+id/btReturn"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/returnblue" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btReturn"
+        android:layout_alignBottom="@+id/btReturn"
+        android:layout_toEndOf="@+id/btReturn"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/bgConnectBt"
+        android:textSize="17sp"
+        android:text="Répondez à la demande de " />
+
+    <TextView
+        android:id="@+id/tvApplicantFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView22"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Nom et Prénom" />
+
+    <ImageView
+        android:id="@+id/imApplicant"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvApplicantFullName"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvApplicantEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imApplicant"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/imApplicant"
+        android:text="Email"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvApplicantPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imApplicant"
+        android:layout_alignStart="@+id/tvApplicantEmail"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/black"
+        android:text="Numero " />
+
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imApplicant"
+        android:layout_below="@+id/imApplicant"
+        android:layout_marginTop="19dp"
+        android:text="Commentaire" />
+
+    <TextView
+        android:id="@+id/tvApplicantNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvComment"
+        android:layout_below="@+id/tvComment"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="Ici sera affiché le commentaire" />
+
+    <TextView
+        android:id="@+id/tvJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvApplicantNote"
+        android:layout_below="@+id/tvApplicantNote"
+        android:layout_marginTop="27dp"
+        android:text="Emploi actuel" />
+
+    <TextView
+        android:id="@+id/tvCurrentJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvJob"
+        android:layout_below="@+id/tvJob"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="Ici sera affiché l'emploi actuel" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvCurrentJob"
+        android:layout_below="@+id/tvCurrentJob"
+        android:layout_marginTop="27dp"
+        android:text="Adresse de domicile" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView30"
+        android:layout_below="@+id/textView30"
+        android:layout_marginTop="10dp"
+        android:text="Ici sera affiché l'adresse"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_below="@+id/tvAddress"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/accept_app32"
+        android:text=" Accepter"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <Button
+        android:id="@+id/btReject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btAccept"
+        android:layout_alignBottom="@+id/btAccept"
+        android:layout_alignEnd="@+id/textView22"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/reject32"
+        android:text=" Refuser"
+        android:textColor="@android:color/holo_red_dark" />
+
+
+</RelativeLayout>

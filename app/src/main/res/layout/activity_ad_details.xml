@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        tools:ignore="NewApi"></Toolbar>
+
+    <ImageView
+        android:id="@+id/im_Ad"
+        android:layout_width="match_parent"
+        android:layout_height="450px"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/btApply"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/im_Ad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Je postule"
+        android:textColor="@color/white"
+        android:background="@color/bgConnectBt"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btReturn"
+        android:layout_below="@+id/btApply"
+        android:layout_marginTop="14dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvDescription"
+        android:layout_below="@+id/tvDescription"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvAddress"
+        android:layout_below="@+id/tvAddress"
+        android:layout_marginTop="15dp"
+        android:text="Salaire"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/im_Owner"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tv18"
+        android:layout_marginBottom="11dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/tvLastEditDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/im_Owner"
+        android:layout_toEndOf="@+id/textView51"
+        android:text="Date de création"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tvOwnerFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btMessage"
+        android:layout_alignBottom="@+id/btMessage"
+        android:layout_alignStart="@+id/tvLastEditDate"
+        android:text="John Doe"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btMessage"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvLastEditDate"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/backblue"
+        android:text="Message"
+        android:textColor="@color/bgConnectBt" />
+
+    <Button
+        android:id="@+id/btReturn"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/im_Ad"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/returnblue" />
+
+    <TextView
+        android:id="@+id/tvOffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btReturn"
+        android:layout_alignBottom="@+id/btReturn"
+        android:layout_toEndOf="@+id/btReturn"
+        android:text="Annonce"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv18"
+        android:layout_alignBottom="@+id/tv18"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/tv18"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOffer"
+        android:layout_toEndOf="@+id/btReturn"
+        android:text="TextView" />
+</RelativeLayout>

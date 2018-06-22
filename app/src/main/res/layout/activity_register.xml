@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="Choisissez votre  photo" />
+
+    <ImageView
+        android:id="@+id/picUser"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/back"
+        android:src="@mipmap/piclarge_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Entrez votre nom et prénom" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView20"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:hint="Nom"
+        android:layout_marginRight="80dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etLastName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:layout_marginRight="80dp"
+        android:hint="Prénom"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btNext"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/next100" />
+
+
+</RelativeLayout>

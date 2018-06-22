@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Job Finder</string>
+
+
+    <string name="status_prompt">Séléctionnez votre état civil</string>
+
+    <string-array name="status">
+        <item>Célibataire</item>
+        <item>Marié(e)</item>
+        <item>Veuf(ve)</item>
+        <item>Autre</item>
+    </string-array>
+
+    <string name="options_prompt">Trier selon...</string>
+
+    <string-array name="options">
+        <item>Annonces récentes</item>
+        <item>Proche de chez moi</item>
+        <item>Salaire decroissant</item>
+        <item>Difficulté croissante</item>
+
+    </string-array>
+
+
+    <string name="difficultiesPrompt">Sélectionnez la difficulté</string>
+
+    <string-array name="optionsDifficulty">
+        <item>Facile</item>
+        <item>Moyenne</item>
+        <item>Difficile</item>
+    </string-array>
+
+
+
+</resources>

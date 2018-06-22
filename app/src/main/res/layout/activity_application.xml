@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        tools:ignore="NewApi" />
+
+    <Button
+        android:id="@+id/btReturn"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/im_Ad"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/returnblue" />
+
+    <TextView
+        android:id="@+id/tvOffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btReturn"
+        android:layout_alignBottom="@+id/btReturn"
+        android:layout_toEndOf="@+id/btReturn"
+        android:text="Offre"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/etNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Commentaire"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etNote"
+        android:layout_alignStart="@+id/btReturn"
+        android:layout_marginBottom="47dp"
+        android:textColor="@color/bgConnectBt"
+        android:text="Rédigez une note pour le propriétaire (Optionnel)" />
+
+    <Button
+        android:id="@+id/btValid"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etNote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:background="@color/bgConnectBt"
+        android:text="Valider"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Validez votre demande"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+</RelativeLayout>

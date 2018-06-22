@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:id="@+id/btReturn"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/textView38"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/returnblue" />
+
+        <TextView
+            android:id="@+id/tvOffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btReturn"
+            android:layout_alignBottom="@+id/btReturn"
+            android:layout_toEndOf="@+id/btReturn"
+            android:text="Modification"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="7dp"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/save"
+            android:text="Enregistrer "
+            android:textColor="@color/bgConnectBt" />
+
+        <ImageView
+            android:id="@+id/imAd"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btReturn"
+            android:layout_marginTop="47dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imAd"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="39dp"
+            android:text="Titre"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView42"
+            android:layout_alignBottom="@+id/textView42"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Titre" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/etField"
+            android:layout_alignBottom="@+id/etField"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:text="Domaine" />
+
+        <EditText
+            android:id="@+id/etField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etTitle"
+            android:layout_below="@+id/etTitle"
+            android:layout_marginTop="9dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Domaine" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/etField"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:text="Difficulté" />
+
+        <Spinner
+            android:id="@+id/spDifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView44"
+            android:layout_alignBottom="@+id/textView44"
+            android:layout_alignStart="@+id/etField"
+            android:entries="@array/optionsDifficulty"
+            android:prompt="@string/difficultiesPrompt" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView44"
+            android:layout_below="@+id/textView44"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            android:text="Salaire" />
+
+        <EditText
+            android:id="@+id/etSalary"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView46"
+            android:layout_alignBottom="@+id/textView46"
+            android:layout_alignStart="@+id/spDifficulty"
+            android:layout_marginStart="7dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Salaire" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView45"
+            android:layout_toEndOf="@+id/etSalary"
+            android:textStyle="bold"
+            android:text="Dt"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etSalary"
+            android:layout_marginTop="15dp"
+            android:layout_toStartOf="@+id/etSalary"
+            android:textStyle="bold"
+            android:text="Paiement" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etSalary"
+            android:layout_alignTop="@+id/textView47"
+            android:layout_marginStart="7dp"
+            android:id="@+id/radioGroup2" >
+
+            <RadioButton
+                android:id="@+id/buttonDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/etSalary"
+                android:layout_below="@+id/radioGroup2"
+                android:text="Par jour" />
+
+            <RadioButton
+                android:id="@+id/buttonHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/radioGroup2"
+                android:layout_toEndOf="@+id/radioGroup2"
+                android:text="Par heure" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup2"
+            android:layout_marginTop="9dp"
+            android:layout_toStartOf="@+id/etSalary"
+            android:textStyle="bold"
+            android:text="Adresse" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etDescription"
+            android:layout_below="@+id/radioGroup2"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Adresse" />
+
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView48"
+            android:layout_marginTop="30dp"
+            android:layout_toStartOf="@+id/etSalary"
+            android:textStyle="bold"
+            android:text="Description" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etSalary"
+            android:layout_alignTop="@+id/textView49"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="Description" />
+
+        <Button
+            android:id="@+id/btDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btSave"
+            android:layout_below="@+id/btSave"
+            android:text="Supprimer  "
+            android:drawableRight="@drawable/delete"
+            android:background="@android:color/transparent"
+            android:textColor="@color/Red"/>
+
+
+    </RelativeLayout>
+</ScrollView>

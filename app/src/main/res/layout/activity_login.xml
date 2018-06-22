@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.baccouche.moez.jobfinder.LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="265dp"
+        android:layout_height="216dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/jobfinder"
+        android:background="@android:color/transparent">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/etMail"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="5px"
+        android:hint="E-Mail"/>
+
+    <EditText
+        android:id="@+id/etPw"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="75px"
+        android:inputType="textPassword"
+        android:hint="Mot de passe"
+        />
+    <Button
+        android:id="@+id/btConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:text="Connexion"
+        android:background="@color/bgConnectBt"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:text="Vous n'avez pas encore de compte ? Inscrivez-vous"
+        android:layout_marginLeft="57px"
+        android:layout_marginTop="25px"
+        android:layout_marginBottom="25px"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:text="Inscription"
+        android:background="@color/bgRegisterBt"
+        android:textColor="#FFFFFF"/>
+
+
+</LinearLayout>

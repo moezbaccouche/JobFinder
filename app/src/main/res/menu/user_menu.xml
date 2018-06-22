@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <menu xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/editProfile"
+        android:title="Modifier"/>
+
+
+    <item
+        android:id="@+id/historyUser"
+        android:title="Mes demandes"/>
+
+    <item
+        android:id="@+id/disconnect"
+        android:title="Déconnexion"/>
+
+
+
+
+</menu>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        tools:ignore="NewApi"
+        android:layout_margin="10dp"
+        android:background="@color/white">
+
+    </Toolbar>
+
+    <Button
+        android:id="@+id/btReturn"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/toolbar"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/returnblue" />
+
+    <TextView
+        android:id="@+id/tvOffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btReturn"
+        android:layout_alignBottom="@+id/btReturn"
+        android:layout_toEndOf="@+id/btReturn"
+        android:text="Mes demandes"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/listMyApps"
+        android:divider="@color/grey"
+        android:dividerHeight="8dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp" />
+
+
+</RelativeLayout>

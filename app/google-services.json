@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1097650238631",
+    "firebase_url": "https://jobfinder-dd084.firebaseio.com",
+    "project_id": "jobfinder-dd084",
+    "storage_bucket": "jobfinder-dd084.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097650238631:android:268d7a14f4bc3c48",
+        "android_client_info": {
+          "package_name": "com.baccouche.moez.jobfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097650238631-57i359rj6csmie893ckp2lv4pfv22rm2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNk5KWgSULtKuD825HXoVQC9Ip_3liqUU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

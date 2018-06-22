@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    tools:context="com.baccouche.moez.jobfinder.Ads.AdActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        android:focusableInTouchMode="true"
+        android:descendantFocusability="beforeDescendants">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="14dp"
+            android:drawableRight="@drawable/search_32"
+            android:hint="Rechercher..."
+            android:singleLine="true"
+            android:imeOptions="actionDone"/>
+
+        <Button
+            android:id="@+id/btMenuSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/etSearch"
+            android:layout_alignBottom="@+id/etSearch"
+            android:layout_marginLeft="10dp"
+            android:text="Trier selon..."
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/arrowdown_24"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/listAds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:divider="@color/grey"
+        android:dividerHeight="8dp"/>
+</LinearLayout>

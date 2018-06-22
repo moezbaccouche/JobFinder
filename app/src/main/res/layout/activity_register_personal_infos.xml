@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informations personnelles"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp" />
+
+    <EditText
+        android:id="@+id/etDegree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Diplôme"/>
+
+    <EditText
+        android:id="@+id/etCurrentJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Emploi actuel"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:prompt="@string/status_prompt"
+            android:layout_margin="20dp"
+            android:entries="@array/status" />
+
+        <TextView
+            android:id="@+id/tv_incorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mot de passe"
+        android:layout_margin="20dp"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/etCheckPw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Retapez le mot de passe"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btNext"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="130dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/next100"/>
+
+
+
+
+</LinearLayout>
